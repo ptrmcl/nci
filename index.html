@@ -24,8 +24,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <title>Noise-Coded Illumination</title>
+  <link rel="icon" type="image/x-icon" href="static/images/lamp.svg">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
 
@@ -52,21 +52,24 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">Noise-Coded Illumination</h1>
+            <h2 class="subtitle is-4 publication-subtitle">For Forensic & Photometric Video Analysis</h2>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href="https://peterfmichael.com" target="_blank">Peter F. Michael</a><sup>1</sup>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <a href="https://zekunhao.com" target="_blank">Zekun Hao</a><sup>2</sup>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                    <a href="https://sergebelongie.github.io" target="_blank">Serge Belongie</a><sup>3</sup>
+                  </span>
+                  <span class="author-block">
+                    <a href="https://abedavis.com" target="_blank">Abe Davis</a><sup>1</sup>
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="author-block"><sup>1</sup>Cornell University <sup>2</sup>Cornell Tech <sup>3</sup>University of Copenhagen<br>Transactions on Graphics (June 2025)</span>
                   </div>
 
                   <div class="column has-text-centered">
@@ -78,12 +81,12 @@
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
                         </span>
-                        <span>Paper</span>
+                        <span>Paper (Open Access)</span>
                       </a>
                     </span>
 
                     <!-- Supplementary PDF link -->
-                    <span class="link-block">
+                    <!-- <span class="link-block">
                       <a href="static/pdfs/supplementary_material.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
@@ -91,10 +94,21 @@
                       </span>
                       <span>Supplementary</span>
                     </a>
-                  </span>
+                  </span> -->
+
+                  <!-- Supplementary Website link -->
+                  <span class="link-block">
+                    <a href="https://boiled-mochi-bd3.notion.site/Supplemental-Material-edba45bcc1544bedb0db041279931186" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-camera"></i>
+                    </span>
+                    <span>Experiment Repository</span>
+                  </a>
+                </span>
 
                   <!-- Github link -->
-                  <span class="link-block">
+                  <!-- <span class="link-block">
                     <a href="https://github.com/YOUR REPO HERE" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
@@ -102,10 +116,10 @@
                     </span>
                     <span>Code</span>
                   </a>
-                </span>
+                </span> -->
 
                 <!-- ArXiv abstract Link -->
-                <span class="link-block">
+                <!-- <span class="link-block">
                   <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -113,7 +127,7 @@
                   </span>
                   <span>arXiv</span>
                 </a>
-              </span>
+              </span> -->
             </div>
           </div>
         </div>
@@ -127,13 +141,12 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
+      <div class="publication-video">
+        <!-- Youtube embed code here -->
+        <iframe src="https://www.youtube.com/embed/UUa_CqjeYA8?si=UTazS_IAPAFTQlDL" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
       <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+        We introduce Noise-Coded Illumination (NCI), a scene-level intervention for helping detect spatiotemporal manipulations of video by coding the light in an environment with noise.
       </h2>
     </div>
   </div>
@@ -145,11 +158,23 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
+        <h2 class="title is-3">The Problem</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            The proliferation of advanced tools for manipulating video has led to an arms race, pitting those who wish to sow disinformation against those who
+            want to detect and expose it. Unfortunately, time favors the ill-intentioned in this race, with fake videos growing increasingly difficult to distinguish from real ones. 
+            At the root of this trend is a fundamental advantage held by those manipulating media: equal access to a distribution of what we consider authentic (i.e., "natural") video. 
           </p>
+          <h2 class="title is-3"><center>Our Contribution</center></h2>
+          <p>
+            We show how coding very subtle, noise-like modulations into the illumination of a scene can help combat this advantage by creating an information asymmetry that 
+            favors verification. Our approach effectively adds a temporal watermark to any video recorded under coded illumination. However, rather than encoding a specific message, 
+            this watermark encodes an image of the unmanipulated scene as it would appear lit only by the coded illumination. We show that even when an adversary knows that our technique 
+            is being used, creating plausible coded fake video amounts to solving a second, more difficult version of the original adversarial content creation problem at an information disadvantage.
+          </p>
+          <h2 class="title is-3"><center>Target Application</center></h2>
+          <p>Our work targets high-stakes settings like public events and interviews, where the content on display is a likely target for manipulation, and while the 
+          illumination can be controlled, the cameras capturing video cannot.</p>
         </div>
       </div>
     </div>
@@ -157,127 +182,79 @@
 </section>
 <!-- End paper abstract -->
 
+<!-- Method -->
+<section class="section" id="Method">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Method</h2>
+    <h3 class="title">Coding the Illumination in the Scene</h3>
+    We experimented with two types of light sources, computer monitors for applications such as video conferencing and stage lights for larger-scale events.
+    <br><br>
+    <img align="right" src="static/images/LightImageInset.jpg" width="200px" height="200px"/>
+    As with many lights, the <a target="_blank" href="https://www.amazon.com/dp/B0BSGYKJJ7?th=1"/>stage light</a> we purchased adopts the 
+    <a target="_blank" href="https://www.nema.org/docs/default-source/standards-document-library/ansi-c137-1-2019-contents-and-scope.pdf"/> ANSI 0-10V dimming standard</a>, which we can use for injecting our time-varying illumination code. 
+    However, we found that the dimming system has a low pass filter with a sub-1Hz cutoff, which prevented us from directly injecting our 12Hz code signal.
+    We fix this by adjusting the filter components and bypassing its internal pulse-width-modulation (PWM) section, a simple modification for manufacturers to incorporate that gives us a bandwidth of
+    over 100Hz. We use an ESP-32 microcontroller running our compiled C code to modulate the light with our code signal, with interactive control of the average brightness and signal amplitude.
+    <h3 class="title">Detecting Temporal Manipulations</h3>
+    <video poster="" id="tree" autoplay controls muted loop height="100%">
+      <!-- Your video here -->
+      <source src="static/videos/temporal.mp4"
+      type="video/mp4">
+    </video>
+    <br><br>We can use local evidence of the code signal in a video to create alignment matrices that map each point in time in a video to a point in our code signal.
+    Discontinuities in the alignment matrix indicate that a video has been temporally tampered. 
+    Most interviews use a tri-camera setup, like the one shown above, which are especially vulnerable to temporal tampering, since an adversary can easily cut between cameras to 
+    change the meaning of what was said, as shown below (view the original and edited videos and alignment matrices <a target="_blank" href="https://boiled-mochi-bd3.notion.site/Television-Interview-15c016299dfb4b36bf18423974d2457f">here</a>).
+   <br><br>
+   <figure>
+   <img align="right" src="static/images/temporal_analysis.webp"/>
+   <figcaption>In the original dialogue of our scene, the
+    interviewee expresses concern about fake video in political campaigns (mid left). The maliciously edited version splices in footage from an earlier response
+    given during a sound check that makes it look like the interviewee supports and encourages the use of fake video for spreading disinformation (mid right).
+    Our recovered alignment matrix displays the original timing of each clip, which shows that the answers in the manipulated video came from footage recorded
+    before the corresponding questions, indicating that they were maliciously taken out of context.</figcaption>
+  </figure>
+    <h3 class="title">Detecting Spatial Manipulations</h3>
+    <video poster="" id="tree" autoplay controls muted loop height="100%">
+      <!-- Your video here -->
+      <source src="static/videos/spatial.mp4"
+      type="video/mp4">
+    </video>
+    <br><br>By assigning N uncorrelated code signals to light sources in a scene, we can perform light source seperation into N components,
+    each lit by the light sources corresponding to that code, as shown above. Typically, lighting is one of the hardest things to
+    fake in a video. With our approach, an adversary needs to somehow recover the illumination codes, which our supplemental analysis suggests is difficult for general types of manipulation, and
+    fake the lighting in N+1 images instead of just 1. We show an example below on analyzing a spatially tampered video from an uninformed adversary, meaning one
+    that doesn't know our technique is being used.<br><br>
 
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
+    <figure>
+    <img src="static/images/CarolineDecompWManipPageWidthCodeShadow_comp.jpg"/>
+    <figcaption>In code images from the fake video (bottom) we see several signs of manipulation. The added content does not
+      appear to reflect coded light. Code images also make it easier to see shadows that are masked by other light sources in the original frame. The shadow that
+      the person’s head casts from the LED lamp is barely visible in the original video due to an uncoded ceiling light. However, in code image 1, all other sources
+      are removed, leaving this part of the shadow clearly visible. The similar code shadows for added content are missing from manipulated code images. We
+      recommend zooming in to better view these results.</figcaption>
+  </figure>
 
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
+    <br><br><br><b>Check out our <a target="_blank" href="https://boiled-mochi-bd3.notion.site/Supplemental-Material-edba45bcc1544bedb0db041279931186">experiment repository</a> 
+    and <a target="_blank" href="">supplemental material</a> for results on diverse scenes such as those recorded outdoors and with dark-skinned subjects, 
+    as well as analysis of human flicker senstivity from coding light, adversarial attacks from informed adversaries, and the effects of real-world phenonema such as video compression.</b>
   </div>
 </section>
-<!-- End youtube video -->
 
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
+<!-- Acks -->
+<section class="section" id="Acks">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Acknowledgments</h2>
+    <p>We thank all those who volunteered to be subjects in our test scenes.
+      This work was supported in part by an NDSEG fellowship to P.M., and the Pioneer Centre for AI, DNRF
+      grant number P1.</p>
   </div>
 </section>
-<!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
-
 
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
+      <h2 class="title">Citation</h2>
       <pre><code>BibTex Code Here</code></pre>
     </div>
 </section>
